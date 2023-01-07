@@ -1,6 +1,10 @@
 import React, { createElement } from "react";
 import ReactDOM from "react-dom/client";
-const Title = () => <h1>Namaste React</h1>;
-const HeaderComponent = () => <div>{Title()}</div>;
+import Chapter3 from "./chapter-3";
+
+const App = () => {
+  return <Chapter3 />;
+};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeaderComponent />);
+root.render(<App />);
